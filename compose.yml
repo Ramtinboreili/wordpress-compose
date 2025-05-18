@@ -21,8 +21,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: sdfascsdvsfdvweliuoiquowecefcwaefef
-      MYSQL_DATABASE: DockerMe
-      MYSQL_USER: DockerMe
+      MYSQL_DATABASE: DB
+      MYSQL_USER: DBUser
       MYSQL_PASSWORD: sdfascsdvsfdvweliuoiquowecefcwaefef
     networks:
       - wp_net
@@ -37,8 +37,8 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: DockerMe
-      WORDPRESS_DB_NAME: DockerMe
+      WORDPRESS_DB_USER: DBUser
+      WORDPRESS_DB_NAME: Ramtin
       WORDPRESS_DB_PASSWORD: sdfascsdvsfdvweliuoiquowecefcwaefef
     ports:
       - 8000:80
